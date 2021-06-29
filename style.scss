@@ -1,3 +1,8 @@
+$font-mont: 'Montserrat', Arial, sans-serif;
+$font-rob: 'Roboto', Arial, sans-serif;
+$green: #00CC00;
+$border: 1px solid #A7A7A7;
+
 *,
 *::after,
 *::before {
@@ -6,3 +11,84 @@
 	padding: 0;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+button {
+	cursor: pointer;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.header {
+	margin-top: 17px;
+	display: flex;
+	justify-content: space-between;
+
+	font-family: $font-mont;
+
+	&__phone {
+		margin-top: 10px;
+	}
+
+}
+
+.logo {
+	width: 200px;
+	height: 52px;
+}
+
+.phone {
+	&__phone {
+		margin-bottom: 4px;
+
+		font-size: 1.6rem;
+	}
+
+	&__text {
+		font-size: 1.1rem;
+	}
+}
+
+.search-form {
+	position: relative;
+	width: 436px;
+	margin-top: 7px;
+
+	&__input {
+		width: 100%;
+		min-width: 50px;
+		height: 37px;
+
+		border: $border;
+		border-radius: 10px;
+	}
+
+	&__button {
+		width: 55px;
+		height: 37px;
+		position: absolute;
+		right: 0;
+		
+		background-color: $green;
+		border: none;
+		border-radius: 10px;
+	}
+}
