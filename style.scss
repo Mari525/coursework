@@ -60,6 +60,14 @@ button {
 		margin-bottom: 4px;
 
 		font-size: 1.6rem;
+
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background: url(img/phone.svg);
+		}
 	}
 
 	&__text {

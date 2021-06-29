@@ -58,6 +58,14 @@ button {
   font-size: 1.6rem;
 }
 
+.phone__phone::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(img/phone.svg);
+}
+
 .phone__text {
   font-size: 1.1rem;
 }
