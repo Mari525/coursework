@@ -15,15 +15,10 @@ html {
 	font-size: 62.5%;
 }
 
-body {
+header,
+main {
 	max-width: 1000px;
 	margin: 0 auto;
-}
-
-h2 {
-	font-family: $font-mont;
-	font-weight: 400;
-	font-size: 1.8rem;
 }
 
 a {
@@ -279,9 +274,71 @@ ul {
 	}
 }
 
-.frost {
-	&__heading {
-		font-size: 1.8rem;
+.products {
+	margin-bottom: 30px;
 
+	&__heading {
+		margin-bottom: 30px;
+		font-family: $font-mont;
+		font-weight: 400;
+		font-size: 1.8rem;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		border: $border;
+		border-radius: 10px;
+
+		padding: 0 15px;
+		height: 350px;
+	}
+}
+
+.item {
+	&__img {
+		max-width: 200px;
+	}
+
+	&__heading {
+		max-width: 200px;
+		font-family: $font-rob;
+		font-size: 1.6rem;
+	}
+
+	&__price {
+		font-family: $font-mont;
+		font-size: 1.8rem;
+	}
+}
+
+.footer {
+	width: 100%;
+
+	background-color: #F4F4F4;
+	font-family: $font-mont;
+	font-size: 1.6rem;
+	padding: 30px 0;
+
+	&__wrapper {
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	$__nav-copy {
+		display: flex;
+		
 	}
 }
