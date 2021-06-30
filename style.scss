@@ -142,13 +142,13 @@ ul {
 	}
 
 	&__list {
-		display: none;
+		width: 300px;
+		padding-left: 14px;
+		padding-bottom: 14px;
 
 		border: $border;
 		border-radius: 10px;
-
-		padding-left: 14px;
-		padding-bottom: 14px;
+		background-color: #ffffff;
 	}
 
 	&__item {
@@ -208,14 +208,12 @@ ul {
 	}
 
 	&__list {
-		display: none;
-		position: absolute;
-		top: 34px;
 		padding: 14px 22px 0;
 		width: 100%;
 
 		border: $border;
 		border-radius: 10px;
+		background-color: #ffffff;
 	}
 
 	&__item {

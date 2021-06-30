@@ -143,11 +143,12 @@ ul {
 }
 
 .categories__list {
-  display: none;
-  border: 1px solid #A7A7A7;
-  border-radius: 10px;
+  width: 300px;
   padding-left: 14px;
   padding-bottom: 14px;
+  border: 1px solid #A7A7A7;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .categories__item {
@@ -216,13 +217,11 @@ ul {
 }
 
 .profile__list {
-  display: none;
-  position: absolute;
-  top: 34px;
   padding: 14px 22px 0;
   width: 100%;
   border: 1px solid #A7A7A7;
   border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .profile__item {
