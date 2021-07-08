@@ -118,21 +118,28 @@ ul {
 }
 
 .categories {
+	
 	&__button {
 		width: 300px;
 		height: 50px;
 
+		background-color: $green;
+		border-radius: 10px;
+		border: none;
+		font-family: $font-mont;
+		cursor: pointer;
+
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
-		background-color: $green;
-		border: none;
-		border-radius: 10px;
-		font-family: $font-mont;
-
-		position: relative;
-		display: block;
+		&:hover .categories__list,
+		&:focus .categories__list {
+			left: 0;
+			opacity: 1;
+			z-index: 100;
+		}
 	}
 
 	&__heading {
@@ -153,8 +160,9 @@ ul {
 		opacity: 0;
 		
 		width: 300px;
+		padding-top: 14px;
 		padding-left: 14px;
-		padding-bottom: 14px;
+		padding-bottom: 7px;
 
 		border: $border;
 		border-radius: 10px;
@@ -162,30 +170,31 @@ ul {
 
 		text-align: left;
 		font-size: 1.6rem;
+
+		&--opened {
+			left: 0;
+			opacity: 1;
+			z-index: 100;
+		}
 	}
 
 	&__item {
-		margin-top: 14px;
-		position: relative;
-		display: block;
-
 		a {
+			height: 30px;
 			display: block;
 
-			&:hover {
+			&:hover,
+			&:focus {
 				color: $green;
+			}
+
+			&:focus .categories__list {
+				left: 0;
+				opacity: 1;
+				z-index: 100;
 			}
 		}
 	}
-}
-
-
-.categories__button:hover .categories__list,
-.categories__button:focus .categories__list
-{
-	left: 0;
-	opacity: 1;
-	z-index: 100;
 }
 
 .menu {
@@ -211,18 +220,19 @@ ul {
 }
 
 .profile {
-	margin-right: 10px;
+	padding-right: 10px;
+	position: relative;
 
-	background: none;
-	border: none;
 	font-family: $font-mont;
 	font-size: 1.6rem;
 
-	display: flex;
-	justify-content: center;
-
-	&__wrapper {
-		position: relative;
+	&__button {
+		background: none;
+		border: none;
+		display: flex;
+		justify-content: center;
+		font-family: $font-mont;
+		font-size: 1.6rem;
 	}
 
 	&__icon {
@@ -232,13 +242,22 @@ ul {
 	}
 
 	&__list {
-		display: none;
+		position: absolute;
+		top: 34px;
+		left: 0;
+		z-index: 100;
+		display: block;
+
 		padding: 14px 22px 0;
 		width: 100%;
 
 		border: $border;
 		border-radius: 10px;
 		background-color: #ffffff;
+	}
+
+	&__list--closed {
+		display: none;
 	}
 
 	&__item {

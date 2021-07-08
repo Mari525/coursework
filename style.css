@@ -119,6 +119,12 @@ ul {
 .categories__button {
   width: 300px;
   height: 50px;
+  background-color: #00CC00;
+  border-radius: 10px;
+  border: none;
+  font-family: "Montserrat", Arial, sans-serif;
+  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,12 +134,13 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #00CC00;
-  border: none;
-  border-radius: 10px;
-  font-family: "Montserrat", Arial, sans-serif;
-  position: relative;
-  display: block;
+}
+
+.categories__button:hover .categories__list,
+.categories__button:focus .categories__list {
+  left: 0;
+  opacity: 1;
+  z-index: 100;
 }
 
 .categories__heading {
@@ -153,8 +160,9 @@ ul {
   top: 50px;
   opacity: 0;
   width: 300px;
+  padding-top: 14px;
   padding-left: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 7px;
   border: 1px solid #A7A7A7;
   border-radius: 10px;
   background-color: #ffffff;
@@ -162,22 +170,22 @@ ul {
   font-size: 1.6rem;
 }
 
-.categories__item {
-  margin-top: 14px;
-  position: relative;
-  display: block;
+.categories__list--opened {
+  left: 0;
+  opacity: 1;
+  z-index: 100;
 }
 
 .categories__item a {
+  height: 30px;
   display: block;
 }
 
-.categories__item a:hover {
+.categories__item a:hover, .categories__item a:focus {
   color: #00CC00;
 }
 
-.categories__button:hover .categories__list,
-.categories__button:focus .categories__list {
+.categories__item a:focus .categories__list {
   left: 0;
   opacity: 1;
   z-index: 100;
@@ -213,21 +221,23 @@ ul {
 }
 
 .profile {
-  margin-right: 10px;
-  background: none;
-  border: none;
+  padding-right: 10px;
+  position: relative;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 1.6rem;
+}
+
+.profile__button {
+  background: none;
+  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.profile__wrapper {
-  position: relative;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.6rem;
 }
 
 .profile__icon {
@@ -237,12 +247,20 @@ ul {
 }
 
 .profile__list {
-  display: none;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: 100;
+  display: block;
   padding: 14px 22px 0;
   width: 100%;
   border: 1px solid #A7A7A7;
   border-radius: 10px;
   background-color: #ffffff;
+}
+
+.profile__list--closed {
+  display: none;
 }
 
 .profile__item {
