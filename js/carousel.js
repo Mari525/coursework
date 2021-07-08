@@ -21,4 +21,19 @@ $(document).ready(function() {
 			</svg>'
 		  ]
 	});
+
+	$('.owl-carousel').each(function() {
+		$(this).find('.owl-prev').each(function() {
+			$(this).attr('aria-label', 'предыдущий слайд');
+		});
+		$(this).find('.owl-next').each(function() {
+			$(this).attr('aria-label', 'следующий слайд');
+		});
+		$(this).find('.owl-dot').each(function(index) {
+			$(this).attr('aria-label', 'переключить на слайд' + (index + 1));
+		});
+		$(this).find('.active').each(function() {
+			$(this).attr('aria-label', 'текущий слайд');
+		});
+	});
 });
