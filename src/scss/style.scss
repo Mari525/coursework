@@ -7,7 +7,7 @@
 .header {
 	margin-top: 17px;
 
-	font-family: $font-mont;
+	// font-family: $font-mont;
 	font-size: 1.6rem;
 
 	&__top {
@@ -63,7 +63,7 @@
 		min-width: 50px;
 		height: 37px;
 
-		border: $border;
+		// border: $border;
 		border-radius: 10px;
 	}
 
@@ -72,23 +72,23 @@
 		height: 37px;
 		position: absolute;
 		right: 0;
-		
-		background-color: $green;
+
+		// background-color: $green;
 		border: none;
 		border-radius: 10px;
 	}
 }
 
 .categories {
-	
+
 	&__button {
 		width: 300px;
 		height: 50px;
 
-		background-color: $green;
+		// background-color: $green;
 		border-radius: 10px;
 		border: none;
-		font-family: $font-mont;
+		// font-family: $font-mont;
 		cursor: pointer;
 
 		position: relative;
@@ -120,13 +120,13 @@
 		left: -999px;
 		top: 50px;
 		opacity: 0;
-		
+
 		width: 300px;
 		padding-top: 14px;
 		padding-left: 14px;
 		padding-bottom: 7px;
 
-		border: $border;
+		// border: $border;
 		border-radius: 10px;
 		background-color: #ffffff;
 
@@ -147,7 +147,7 @@
 
 			&:hover,
 			&:focus {
-				color: $green;
+				// color: $green;
 			}
 
 			&:focus .categories__list {
@@ -169,7 +169,7 @@
 	flex-wrap: wrap;
 
 	background-color: #F4F4F4;
-	border: $border;
+	// border: $border;
 	border-radius: 10px;
 
 	&__list {
@@ -185,7 +185,7 @@
 	padding-right: 10px;
 	position: relative;
 
-	font-family: $font-mont;
+	// font-family: $font-mont;
 	font-size: 1.6rem;
 
 	&__button {
@@ -193,7 +193,7 @@
 		border: none;
 		display: flex;
 		justify-content: center;
-		font-family: $font-mont;
+		// font-family: $font-mont;
 		font-size: 1.6rem;
 	}
 
@@ -213,7 +213,7 @@
 		padding: 14px 22px 0;
 		width: 100%;
 
-		border: $border;
+		// border: $border;
 		border-radius: 10px;
 		background-color: #ffffff;
 	}
@@ -229,7 +229,7 @@
 			display: block;
 
 			&:hover {
-				color: $green;
+				// color: $green;
 			}
 		}
 	}
@@ -250,12 +250,12 @@
 		height: 15px;
 		border-radius: 50%;
 		background: none;
-		border: 2px solid $green;
+		// border: 2px solid $green;
 		margin: 0 4px;
 	}
 
 	div.owl-carousel button.owl-dot.active {
-		background-color: $green;
+		// background-color: $green;
 	}
 
 	.owl-prev,
@@ -284,12 +284,12 @@
 
 	&__heading {
 		max-width: 200px;
-		font-family: $font-rob;
+		// font-family: $font-rob;
 		font-size: 1.6rem;
 	}
 
 	&__price {
-		font-family: $font-mont;
+		// font-family: $font-mont;
 		font-size: 1.8rem;
 	}
 }
