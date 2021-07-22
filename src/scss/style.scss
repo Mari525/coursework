@@ -1,6 +1,6 @@
-@import "./variables.scss";
-@import "./mixins.scss";
-@import "./general.scss";
+@use "./variables.scss";
+@use "./mixins.scss";
+@use "./general.scss";
 @use "blocks/footer.scss";
 @use "blocks/products.scss";
 
