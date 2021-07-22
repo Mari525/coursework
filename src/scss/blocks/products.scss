@@ -1,0 +1,30 @@
+.products {
+	margin-bottom: 30px;
+
+	&__heading {
+		margin-bottom: 30px;
+		font-family: $font-mont;
+		font-weight: 400;
+		font-size: 1.8rem;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		border: $border;
+		border-radius: 10px;
+
+		padding: 0 15px;
+		margin-bottom: 10px;
+		height: 350px;
+	}
+}
