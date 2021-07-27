@@ -1,11 +1,13 @@
+@use "../variables.scss" as v;
+
 .categories__button {
 	width: 300px;
 	height: 50px;
 
-	background-color: $green;
+	background-color: v.$green;
 	border-radius: 10px;
 	border: none;
-	font-family: $font-mont;
+	font-family: v.$font-mont;
 	cursor: pointer;
 
 	position: relative;
@@ -43,7 +45,7 @@
 	padding-left: 14px;
 	padding-bottom: 7px;
 
-	border: $border;
+	border: v.$border;
 	border-radius: 10px;
 	background-color: #ffffff;
 
@@ -64,7 +66,7 @@
 
 		&:hover,
 		&:focus {
-			color: $green;
+			color: v.$green;
 		}
 
 		&:focus .categories__list {

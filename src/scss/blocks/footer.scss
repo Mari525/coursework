@@ -1,9 +1,11 @@
+@use "../variables.scss" as v;
+
 .footer {
 	width: 100%;
 	min-height: 150px;
 
 	background-color: #F4F4F4;
-	font-family: $font-mont;
+	font-family: v.$font-mont;
 	font-size: 1.6rem;
 }
 

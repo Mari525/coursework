@@ -1,3 +1,5 @@
+@use "../variables.scss" as v;
+
 .menu {
 	width: 60%;
 	height: 50px;
@@ -8,7 +10,7 @@
 	flex-wrap: wrap;
 
 	background-color: #F4F4F4;
-	border: $border;
+	border: v.$border;
 	border-radius: 10px;
 }
 

@@ -1,3 +1,5 @@
+@use "../variables.scss" as v;
+
 .search-form {
 	display: none;
 	position: relative;
@@ -10,7 +12,7 @@
 	min-width: 50px;
 	height: 37px;
 
-	border: $border;
+	border: v.$border;
 	border-radius: 10px;
 }
 
@@ -20,7 +22,7 @@
 	position: absolute;
 	right: 0;
 	
-	background-color: $green;
+	background-color: v.$green;
 	border: none;
 	border-radius: 10px;
 }

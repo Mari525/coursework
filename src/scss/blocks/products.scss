@@ -1,10 +1,13 @@
+@use "../variables.scss" as v;
+
 .products {
 	margin-bottom: 30px;
 }
 
 .products__heading {
+	margin-top: 20px;
 	margin-bottom: 30px;
-	font-family: $font-mont;
+	font-family: v.$font-mont;
 	font-weight: 400;
 	font-size: 1.8rem;
 }
