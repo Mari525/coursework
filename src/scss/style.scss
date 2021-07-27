@@ -3,183 +3,11 @@
 @use "./general.scss";
 @use "blocks/footer.scss";
 @use "blocks/products.scss";
-
-.header {
-	margin-top: 17px;
-
-	font-family: $font-mont;
-	font-size: 1.6rem;
-
-	&__top {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
-	&__phone {
-		margin-top: 10px;
-	}
-
-	&__nav {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-
-		margin-top: 37px;
-	}
-
-}
-
-.logo {
-	width: 200px;
-	height: 52px;
-}
-
-.phone {
-	&__phone {
-		margin-bottom: 4px;
-
-		&::before {
-			content: "";
-			display: inline-block;
-			width: 14px;
-			height: 14px;
-			background: url(img/phone.svg);
-		}
-	}
-
-	&__text {
-		font-size: 1.1rem;
-	}
-}
-
-.search-form {
-	position: relative;
-	width: 436px;
-	margin-top: 7px;
-
-	&__input {
-		width: 100%;
-		min-width: 50px;
-		height: 37px;
-
-		border: $border;
-		border-radius: 10px;
-	}
-
-	&__button {
-		width: 55px;
-		height: 37px;
-		position: absolute;
-		right: 0;
-		
-		background-color: $green;
-		border: none;
-		border-radius: 10px;
-	}
-}
-
-.categories {
-	
-	&__button {
-		width: 300px;
-		height: 50px;
-
-		background-color: $green;
-		border-radius: 10px;
-		border: none;
-		font-family: $font-mont;
-		cursor: pointer;
-
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		&:hover .categories__list,
-		&:focus .categories__list {
-			left: 0;
-			opacity: 1;
-			z-index: 100;
-		}
-	}
-
-	&__heading {
-		color: #ffffff;
-		font-size: 1.8rem;
-		font-weight: 600;
-		text-transform: uppercase;
-	}
-
-	&__lines {
-		margin-right: 10px;
-	}
-
-	&__list {
-		position: absolute;
-		left: -999px;
-		top: 50px;
-		opacity: 0;
-		
-		width: 300px;
-		padding-top: 14px;
-		padding-left: 14px;
-		padding-bottom: 7px;
-
-		border: $border;
-		border-radius: 10px;
-		background-color: #ffffff;
-
-		text-align: left;
-		font-size: 1.6rem;
-
-		&--opened {
-			left: 0;
-			opacity: 1;
-			z-index: 100;
-		}
-	}
-
-	&__item {
-		a {
-			height: 30px;
-			display: block;
-
-			&:hover,
-			&:focus {
-				color: $green;
-			}
-
-			&:focus .categories__list {
-				left: 0;
-				opacity: 1;
-				z-index: 100;
-			}
-		}
-	}
-}
-
-.menu {
-	width: 60%;
-	height: 50px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-
-	background-color: #F4F4F4;
-	border: $border;
-	border-radius: 10px;
-
-	&__list {
-		display: flex;
-	}
-
-	&__item {
-		margin-left: 10px;
-	}
-}
+@use "blocks/header.scss";
+@use "blocks/phone.scss";
+@use "blocks/search-form.scss";
+@use "blocks/categories.scss";
+@use "blocks/menu.scss";
 
 .profile {
 	padding-right: 10px;
@@ -236,6 +64,7 @@
 }
 
 .slider {
+	display: none;
 	max-width: 800px;
 	width: 100%;
 	margin: 30px auto 60px;

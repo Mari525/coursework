@@ -1,0 +1,15 @@
+.phone__phone {
+	margin-bottom: 4px;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		background: url(img/phone.svg);
+	}
+}
+
+.phone__text {
+	font-size: 1.1rem;
+}

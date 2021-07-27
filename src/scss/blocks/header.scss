@@ -1,0 +1,24 @@
+.header {
+	margin-top: 17px;
+
+	font-family: $font-mont;
+	font-size: 1.6rem;
+}
+
+.header__info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.header__phone {
+	margin-top: 10px;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	margin-top: 37px;
+}

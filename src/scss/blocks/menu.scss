@@ -1,0 +1,21 @@
+.menu {
+	width: 60%;
+	height: 50px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	background-color: #F4F4F4;
+	border: $border;
+	border-radius: 10px;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__item {
+	margin-left: 10px;
+}
