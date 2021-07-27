@@ -5,13 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Delivery | Главная</title>
-	<!-- OwlCarousel2 -->
-	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	<!-- My styles -->
 	<link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -28,16 +21,6 @@
 				<a class="phone__phone" href="#">+7 (977) 801-02-40</a>
 				<p class="phone__text">Ежедневно, с 09:00 до 22:00</p>
 			</div>
-			<form class="search-form" action="#">
-				<label class="visually-hidden" for="search-input">Введите поисковый запрос</label>
-				<input class="search-form__input" type="text" id="search-input">
-				<button class="search-form__button" id="search-button" aria-label="искать">
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<circle cx="6.5" cy="6.5" r="5" stroke="white" stroke-width="3"/>
-						<line x1="9.15233" y1="9.03972" x2="14.1523" y2="15.0397" stroke="white" stroke-width="3"/>
-					</svg>					
-				</button>
-			</form>
 		</section>
 		<section>
 			<nav class="header__nav">
@@ -99,31 +82,14 @@
 	</header>
 	<main>
 		<h1 class="visually-hidden">Доставка продуктов "Delivery"</h1>
-		<section class="slider">
-			<h2 class="visually-hidden">Специальные предложения</h2>
-			<div id="carousel-1" class="owl-carousel">
-
-				<div class="carousel-item">
-					<img src="img/slider-1.jpg" alt="">
-				</div>
-				<div class="carousel-item">
-					<img src="img/slider-1.jpg" alt="">
-				</div>
-				<div class="carousel-item">
-					<img src="img/slider-1.jpg" alt="">
-				</div>
-				<div class="carousel-item">
-					<img src="img/slider-1.jpg" alt="">
-				</div>
-			  
-			  </div>
-		</section>
 		<section class="products">
 			<h2 class="products__heading">Замороженные продукты</h2>
 			<ul class="products__list">
 				<li class="product">
-					<img class="product__img" src="img/item1.jpg" alt="Пельмени Сибирская коллекция Русские 700 г">
-					<h3 class="product__heading">Пельмени Сибирская коллекция Русские 700 г</h3>
+					<a href="#">
+						<img class="product__img" src="img/item1.jpg" alt="Пельмени Сибирская коллекция Русские 700 г">
+						<h3 class="product__heading">Пельмени Сибирская коллекция Русские 700 г</h3>
+					</a>
 					<b class="product__price">600 ₽</b>
 				</li>
 				
@@ -152,8 +118,6 @@
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="owlcarousel/owl.carousel.min.js"></script>
-	<script src="js/carousel.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

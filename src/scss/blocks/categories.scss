@@ -1,13 +1,15 @@
 @use "../variables.scss" as v;
+@use "../mixins.scss" as m;
 
 .categories__button {
 	width: 300px;
 	height: 50px;
 
+	@include m.font-mont;
+
 	background-color: v.$green;
 	border-radius: 10px;
 	border: none;
-	font-family: v.$font-mont;
 	cursor: pointer;
 
 	position: relative;
@@ -45,7 +47,7 @@
 	padding-left: 14px;
 	padding-bottom: 7px;
 
-	border: v.$border;
+	@include m.border;
 	border-radius: 10px;
 	background-color: #ffffff;
 
