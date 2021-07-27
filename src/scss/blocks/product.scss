@@ -1,0 +1,27 @@
+.product {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	border: $border;
+	border-radius: 10px;
+
+	padding: 0 15px;
+	margin-bottom: 10px;
+	height: 350px;
+}
+
+.product__img {
+	max-width: 200px;
+}
+
+.product__heading {
+	max-width: 200px;
+	font-family: $font-rob;
+	font-size: 1.6rem;
+}
+
+.product__price {
+	font-family: $font-mont;
+	font-size: 1.8rem;
+}

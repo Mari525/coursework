@@ -5,25 +5,25 @@
 	background-color: #F4F4F4;
 	font-family: $font-mont;
 	font-size: 1.6rem;
+}
 
-	&__wrapper {
-		max-width: 1000px;
-		margin: 0 auto;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
-		padding: 20px 0 10px;
-	}
+.footer__wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0 10px;
+}
 
-	&__nav-copy {
-		height: 100px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
+.footer__nav-copy {
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
-	&__link {
-		margin-bottom: 5px;
-	}
+.footer__link {
+	margin-bottom: 5px;
 }
