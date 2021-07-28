@@ -1,9 +1,9 @@
-@use "../variables.scss" as v;
+@use "../mixins.scss" as m;
 
 .header {
 	margin-top: 17px;
 
-	font-family: v.$font-mont;
+	@include m.font-mont;
 	font-size: 1.6rem;
 }
 

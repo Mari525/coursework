@@ -1,11 +1,11 @@
-@use "../variables.scss" as v;
+@use "../mixins.scss" as m;
 
 .product {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 
-	border: v.$border;
+	@include m.border;
 	border-radius: 10px;
 
 	padding: 0 15px;
@@ -20,11 +20,11 @@
 .product__heading {
 	margin-top: 10px;
 	max-width: 200px;
-	font-family: v.$font-rob;
+	@include m.font-rob;
 	font-size: 1.6rem;
 }
 
 .product__price {
-	font-family: v.$font-mont;
+	@include m.font-mont;
 	font-size: 1.8rem;
 }

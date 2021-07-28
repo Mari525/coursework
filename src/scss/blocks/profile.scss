@@ -1,10 +1,11 @@
 @use "../variables.scss" as v;
+@use "../mixins.scss" as m;
 
 .profile {
 	padding-right: 10px;
 	position: relative;
 
-	font-family: v.$font-mont;
+	@include m.font-mont;
 	font-size: 1.6rem;
 }
 
@@ -13,7 +14,7 @@
 	border: none;
 	display: flex;
 	justify-content: center;
-	font-family: v.$font-mont;
+	font-family: inherit;
 	font-size: 1.6rem;
 }
 

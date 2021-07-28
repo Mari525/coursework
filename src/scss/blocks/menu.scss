@@ -1,4 +1,4 @@
-@use "../variables.scss" as v;
+@use "../mixins.scss" as m;
 
 .menu {
 	width: 60%;
@@ -10,7 +10,7 @@
 	flex-wrap: wrap;
 
 	background-color: #F4F4F4;
-	border: v.$border;
+	@include m.border;
 	border-radius: 10px;
 }
 
