@@ -1,25 +1,29 @@
 @use "../mixins.scss" as m;
+@use "../variables.scss" as v;
 
 .product {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: center;
 
 	@include m.border;
 	border-radius: 10px;
 
-	padding: 0 15px;
-	margin-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
 	height: 350px;
+	width: 240px;
 }
 
 .product__img {
-	max-width: 200px;
+	max-width: 210px;
 }
 
 .product__heading {
 	margin-top: 10px;
-	max-width: 200px;
+	max-width: 210px;
 	@include m.font-rob;
 	font-size: 1.6rem;
 }
@@ -27,4 +31,37 @@
 .product__price {
 	@include m.font-mont;
 	font-size: 1.8rem;
+}
+
+.product__wrapper {
+	width: 210px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product__button {
+	width: 140px;
+	height: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: v.$green;
+	border: none;
+	border-radius: 10px;
+
+	@include m.font-mont;
+	font-weight: 600;
+	font-size: 1.6rem;
+	color: #ffffff;
+}
+
+.product__cart-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	fill: #ffffff;
 }
