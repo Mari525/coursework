@@ -25,7 +25,7 @@
 	}
 }
 
-.categories__heading {
+.categories__text {
 	color: #ffffff;
 	font-size: 1.8rem;
 	font-weight: 600;
@@ -37,6 +37,7 @@
 }
 
 .categories__list {
+	display: none;
 	position: absolute;
 	left: -999px;
 	top: 50px;
