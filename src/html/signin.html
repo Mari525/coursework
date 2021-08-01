@@ -4,12 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Delivery | Главная</title>
-	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
-	<!-- My styles -->
-	<link rel="stylesheet" href="./css/style.min.css">
+	<title>Delivery | Вход</title>
 </head>
-<body class="body">
+<body>
 	<header class="header">
 		<section class="header__info">
 			<div class="header__logo">
@@ -86,30 +83,18 @@
 			</nav>
 		</section>
 	</header>
-	<main>
-		<h1 class="visually-hidden">Доставка продуктов "Delivery"</h1>
-		<section class="products">
-			<h2 class="products__heading">Замороженные продукты</h2>
-			<ul class="products__list">
-				<li class="product">
-					<a href="#">
-						<img class="product__img" src="img/item1.jpg" alt="Пельмени Сибирская коллекция Русские 700 г">
-						<h3 class="product__heading">Пельмени Сибирская коллекция Русские 700 г</h3>
-					</a>
-					<div class="product__wrapper">
-						<b class="product__price">600 ₽</b>
-						<button class="product__button">
-							<svg class="product__cart-icon" width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
-								<g><g><g><g><path d="M366,763.4c46.9,0,84.9,38,84.9,84.9c0,46.9-38,84.9-84.9,84.9c-46.9,0-84.9-38-84.9-84.9C281.1,801.4,319.2,763.4,366,763.4z"/></g><g><path d="M766.5,763.4c46.9,0,84.9,38,84.9,84.9c0,46.9-38,84.9-84.9,84.9s-84.9-38-84.9-84.9C681.5,801.4,719.6,763.4,766.5,763.4z"/></g><path d="M984.8,288.9c-5.1-6.9-13.1-11-21.7-11H287.8c-10.3,0-19.7-5.9-24.2-15.2L180,90.3c-7-14.4-21.5-23.5-37.5-23.5h-111C19.6,66.9,10,76.4,10,88.3v27.1c0,11.8,9.6,21.4,21.4,21.4h79.5c5.5,0,10.3,3.7,11.7,9l133.2,505.6c12.7,48.4,56.5,82.2,106.6,82.2h414.1c48.3,0,90.9-31.4,105.3-77.5l106.9-343.3C991.3,304.7,989.8,295.8,984.8,288.9z M806.1,632.6c-4.1,13-15.9,21.7-29.5,21.7H362.5c-14,0-26.3-9.5-29.8-23.1l-65.7-249.5c-1.6-5.8-0.3-12,3.4-16.8c3.7-4.8,9.4-7.6,15.4-7.6h579.8c6.1,0,12,2.9,15.6,7.9c3.6,4.9,4.7,11.4,2.9,17.2L806.1,632.6z"/></g></g></g>
-							</svg>
-							В корзину
-						</button>
-					</div>
-				</li>
-				
-			</ul>
-		</section>
+
+	<main class="signin">
+		<h1 class="signin__heading">Вход</h1>
+		<form action="#">
+			<label class="signin__label" for="signin-email">Email:</label>
+			<input class="signin__input" type="email" id="signin-email" name="email">
+			<label class="signin__label" for="signin-password">Пароль:</label>
+			<input class="signin__input" type="password" id="signin-password" name="password">
+		</form>
+		<button class="signin__button" type="submit">Войти</button>
 	</main>
+
 	<footer class="footer">
 		<div class="footer__wrapper">
 			<section class="footer__nav-copy">
@@ -131,7 +116,5 @@
 			</section>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="js/script.js"></script>
 </body>
 </html>

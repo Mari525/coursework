@@ -17,12 +17,12 @@
 	justify-content: center;
 	align-items: center;
 
-	&:hover .categories__list,
-	&:focus .categories__list {
-		left: 0;
-		opacity: 1;
-		z-index: 100;
-	}
+	// &:hover .categories__list,
+	// &:focus .categories__list {
+	// 	left: 0;
+	// 	opacity: 1;
+	// 	z-index: 100;
+	// }
 }
 
 .categories__text {
@@ -72,10 +72,10 @@
 			color: v.$green;
 		}
 
-		&:focus .categories__list {
-			left: 0;
-			opacity: 1;
-			z-index: 100;
-		}
+		// &:focus .categories__list {
+		// 	left: 0;
+		// 	opacity: 1;
+		// 	z-index: 100;
+		// }
 	}
 }

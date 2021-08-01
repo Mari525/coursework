@@ -1,24 +1,20 @@
-$(document).ready(function() {
-	// $('.burger').click(function(){
-        //         $('.burger').toggleClass('open-menu');
-        //         $('.nav').toggleClass('open-menu');
-        //         $('body').toggleClass('fixed-page');
-	// });
+// $(document).ready(function() {
+//         $('.categories__button').focus(function () {
+//                 $('.categories__list').toggleClass('categories__list--opened');
+//         })
 
-        // $('.about__button-more').click(function(){
-        //         $(".about__appear").fadeIn(1000);
-        //         $('.about__button-more').addClass('about__appear');
-        // });
+//         $('.profile').click(function () {
+//                 $('.profile__list').toggleClass('profile__list--closed');
+//         })
 
-        $('.categories__button').focus(function () {
-                $('.categories__list').toggleClass('categories__list--opened');
-        })
+//         $('.profile__button').focus(function () {
+//                 $('.profile__list').toggleClass('profile__list--closed');
+//         })
+// });
 
-        $('.profile').click(function () {
-                $('.profile__list').toggleClass('profile__list--closed');
-        })
+// let categoriesButton = document.getElementById("categories-button");
+// let categoriesList = document.getElementById("categories-list");
 
-        $('.profile__button').focus(function () {
-                $('.profile__list').toggleClass('profile__list--closed');
-        })
-});
+// categoriesButton.addEventListener("mouseenter", function(){
+        
+// })
