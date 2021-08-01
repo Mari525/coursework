@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Delivery | Вход</title>
+	<title>Document</title>
 </head>
 <body>
 	<header class="header">
@@ -84,15 +84,21 @@
 		</section>
 	</header>
 
-	<main class="signin">
-		<h1 class="signin__heading">Вход</h1>
+	<main class="signup">
+		<h1 class="signup__heading">Вход</h1>
 		<form action="#">
-			<label class="signin__label" for="signin-email">Email:</label>
-			<input class="signin__input" type="email" id="signin-email" name="email">
-			<label class="signin__label" for="signin-password">Пароль:</label>
-			<input class="signin__input" type="password" id="signin-password" name="password">
+			<label class="signup__label label" for="signup-name">Имя*</label>
+			<input class="signup__input input" type="text" id="signup-name" name="name">
+			<label class="signup__label label" for="signup-family">Фамилия*</label>
+			<input class="signup__input input" type="text" id="signup-family" name="family">
+			<label class="signup__label label" for="signup-email">Email*</label>
+			<input class="signup__input input" type="email" id="signup-email" name="email">
+			<label class="signup__label label" for="signup-password">Пароль*</label>
+			<input class="signup__input input" type="password" id="signup-password" name="password">
+			<label class="signup__label label" for="signup-address">Адрес</label>
+			<input class="signup__input input" type="text" id="signup-address" name="address">
 		</form>
-		<button class="signin__button button" type="submit">Войти</button>
+		<button class="signup__button button" type="submit">Зарегистироваться</button>
 	</main>
 
 	<footer class="footer">
