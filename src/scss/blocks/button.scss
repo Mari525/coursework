@@ -1,0 +1,15 @@
+@use "../variables.scss" as v;
+@use "../mixins.scss" as m;
+
+.button {
+	padding: 9px 14px;
+
+	background-color: v.$green;
+	border: none;
+	border-radius: 10px;
+
+	color: #ffffff;
+	@include m.font-mont;
+	font-weight: 600;
+	font-size: 1.8rem;
+}

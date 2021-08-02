@@ -1,0 +1,13 @@
+@use "../mixins.scss" as m;
+
+.input {
+	width: 300px;
+	height: 40px;
+	margin-bottom: 30px;
+
+	border-radius: 10px;
+	@include m.border;
+
+	@include m.font-mont;
+	font-size: 1.6rem;
+}
