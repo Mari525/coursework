@@ -1,0 +1,8 @@
+@use "../mixins.scss" as m;
+
+.text {
+	@include m.font-mont;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #000000;
+}
