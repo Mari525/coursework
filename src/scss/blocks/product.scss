@@ -57,11 +57,13 @@
 	font-weight: 600;
 	font-size: 1.6rem;
 	color: #ffffff;
-}
 
-.product__cart-icon {
-	width: 20px;
-	height: 20px;
-	margin-right: 5px;
-	fill: #ffffff;
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+		background-image: url("../../img/cart.svg");
+	}
 }
