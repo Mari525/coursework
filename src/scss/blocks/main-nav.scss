@@ -20,6 +20,10 @@
 
 .main-nav__item {
 	margin-left: 10px;
+
+	a:hover {
+		color: rgba(0, 0, 0, 0.6);
+	}
 }
 
 .main-nav__wrapper {
