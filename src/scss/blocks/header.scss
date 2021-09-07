@@ -3,6 +3,7 @@
 .header {
 	margin-top: 17px;
 	margin-bottom: 50px;
+	@include m.wrapper;
 
 	@include m.font-mont;
 	font-size: 1.6rem;
@@ -24,4 +25,5 @@
 	flex-wrap: wrap;
 
 	margin-top: 37px;
+	list-style: none;
 }
